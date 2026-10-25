@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Achadinhos Imperdíveis</title>
+  <meta
+    name="description"
+    content="Confira os melhores achadinhos e ofertas selecionadas."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <div class="logo">
+        <span class="logo-icon">🔥</span>
+
+        <div>
+          <h1 id="nomeLoja">Meus Achadinhos</h1>
+          <p id="subtitulo">As melhores ofertas em um só lugar!</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="busca"
+          placeholder="🔎 Buscar produto..."
+        />
+      </div>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <section class="hero">
+      <div>
+        <span class="badge">OFERTAS ATUALIZADAS</span>
+
+        <h2>
+          Achadinhos que você
+          <span>não pode perder!</span>
+        </h2>
+
+        <p>
+          Produtos selecionados com ofertas especiais.
+          Aproveite antes que acabem!
+        </p>
+      </div>
+    </section>
+
+
+    <section class="filters">
+
+      <div class="filter-title">
+        <h3>Encontre sua oferta</h3>
+      </div>
+
+      <div id="categorias" class="categories">
+        <button class="category active" data-categoria="Todos">
+          Todos
+        </button>
+      </div>
+
+    </section>
+
+
+    <section class="products-section">
+
+      <div class="section-header">
+        <h2>🔥 Ofertas em destaque</h2>
+        <span id="contadorProdutos"></span>
+      </div>
+
+
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando as melhores ofertas...</p>
+      </div>
+
+
+      <div id="erro" class="erro hidden">
+        <h3>Ops! Não foi possível carregar os produtos.</h3>
+        <p>Verifique a configuração da planilha.</p>
+      </div>
+
+
+      <div id="semProdutos" class="empty hidden">
+        <h3>Nenhum produto encontrado 😢</h3>
+        <p>Tente buscar outro produto.</p>
+      </div>
+
+
+      <div id="produtos" class="products-grid"></div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+
+      <h3 id="footerNome">Meus Achadinhos</h3>
+
+      <p>
+        Alguns links podem ser links de afiliado.
+        Isso significa que podemos receber uma pequena comissão
+        sem nenhum custo adicional para você.
+      </p>
+
+      <small>
+        © <span id="ano"></span> Todos os direitos reservados.
+      </small>
+
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
